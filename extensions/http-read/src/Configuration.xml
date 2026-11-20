@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Configuration uuid="1258511f-5992-4c8f-846b-eed4fe91d41e">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
+				<xr:ObjectId>539181c1-6ee0-43e6-8c95-993caf9702e7</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
+				<xr:ObjectId>a58a93ce-8eb7-4139-99f1-ee64f4058d74</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
+				<xr:ObjectId>874f48db-1c55-40f3-a4a8-41347439221e</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
+				<xr:ObjectId>a86b92aa-dca5-4d58-b84e-06bcc9465a4f</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
+				<xr:ObjectId>b953aed2-3316-4209-9e39-0b09b1e6abc6</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>f426c906-30b9-4956-a62f-4201d223ce62</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
+				<xr:ObjectId>7ca36f6d-1dc0-4ca7-b0ac-32ce4f88f0f9</xr:ObjectId>
+			</xr:ContainedObject>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>AIDataRead</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>AI Data Read</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Универсальное read-only HTTP-расширение для запросов на языке 1С и безопасного СКД.</Comment>
+			<ConfigurationExtensionPurpose>AddOn</ConfigurationExtensionPurpose>
+			<KeepMappingToExtendedConfigurationObjectsByIDs>false</KeepMappingToExtendedConfigurationObjectsByIDs>
+			<NamePrefix>AIR_</NamePrefix>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_27</ConfigurationExtensionCompatibilityMode>
+			<DefaultRunMode>ManagedApplication</DefaultRunMode>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
+			</UsePurposes>
+			<ScriptVariant>Russian</ScriptVariant>
+			<Vendor>ai for 1c</Vendor>
+			<Version>0.2.0</Version>
+			<DefaultLanguage>Language.Русский</DefaultLanguage>
+			<BriefInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Собственное read-only HTTP-расширение: ping/info/query validate/query execute и безопасный СКД execute/render.</v8:content>
+				</v8:item>
+			</BriefInformation>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нейтральное расширение без зависимостей от БСП и БИТ. Не содержит обработчиков записи, административных и startup-процедур. СКД работает только с проверенным начальным subset локального query dataset и отключёнными внешними функциями.</v8:content>
+				</v8:item>
+			</DetailedInformation>
+			<Copyright>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ai for 1c</v8:content>
+				</v8:item>
+			</Copyright>
+			<VendorInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>local://ai-data-read</v8:content>
+				</v8:item>
+			</VendorInformationAddress>
+			<ConfigurationInformationAddress/>
+			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
+		</Properties>
+		<ChildObjects>
+			<Language>Русский</Language>
+			<Role>AIR_HTTPRead</Role>
+			<CommonModule>AIR_ReadCore</CommonModule>
+			<CommonModule>AIR_DcsExecution</CommonModule>
+			<CommonModule>AIR_DcsOutput</CommonModule>
+			<HTTPService>AIR_DataRead</HTTPService>
+		</ChildObjects>
+	</Configuration>
+</MetaDataObject>

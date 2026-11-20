@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<HTTPService uuid="d482a341-47f3-46dc-a846-d3dde163e758">
+		<Properties>
+			<Name>AIR_DataRead</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>AI Data Read HTTP-сервис</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Read-only HTTP-сервис: ping, info, query validate/execute, безопасный СКД execute/render.</Comment>
+			<RootURL>ai-data-read</RootURL>
+			<ReuseSessions>DontUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="bbd59503-2f51-4eea-9b75-2fe8050fef2b">
+				<Properties>
+					<Name>Ping</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ping</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Диагностическая проверка доступности сервиса.</Comment>
+					<Template>/ping/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="e4f5fec6-275c-4f20-b91c-66c06014fcc2">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>Пинг</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="611bee45-6c8a-4ba7-91be-00d21bb632fa">
+				<Properties>
+					<Name>ServiceInfo</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о сервисе</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Служебная информация о сервисе, контракте запросов и ограничениях.</Comment>
+					<Template>/info/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="e78623a3-24a3-412a-bf9b-f2a5cb441e9a">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>Информация</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="0b60a789-d175-4999-b558-227005879d9d">
+				<Properties>
+					<Name>Validate1CQuery</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить запрос 1С</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Разбор и проверка запроса без выполнения.</Comment>
+					<Template>/v1/query/validate/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="c57e360e-1a48-4ade-ac08-e45dd0ced94a">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ПроверитьЗапрос</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="ed3aa839-b2a2-4d6a-9b66-c392cf0c3041">
+				<Properties>
+					<Name>Execute1CQuery</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить запрос 1С</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Выполнение проверенного read-only пакета запросов под текущим пользователем ИБ.</Comment>
+					<Template>/v1/query/execute/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="64336273-0615-47f6-a039-bd92ce1b814e">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ВыполнитьЗапрос</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="e808e237-0963-4bbd-96db-c9bdeb488783">
+				<Properties>
+					<Name>ExecuteDataComposition</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить СКД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Выполнение проверенной XML-схемы СКД в коллекцию значений.</Comment>
+					<Template>/v1/dcs/execute/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="33c7d18e-2826-4229-9b1d-14e61a3fca76">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ВыполнитьСхемуКомпоновки</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="c15e3b49-3042-4709-be12-87dcbe153e5a">
+				<Properties>
+					<Name>RenderDataComposition</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вывести СКД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вывод проверенной XML-схемы СКД в табличный документ, cells/preview/XLSX.</Comment>
+					<Template>/v1/dcs/render/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="e563139c-181e-4c3e-8270-d18fca0b0448">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>РендерСхемуКомпоновки</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

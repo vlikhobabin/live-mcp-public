@@ -1,0 +1,26 @@
+[project]
+name = "live-mcp-for-1c"
+version = "0.1.0"
+description = "Minimal read-only MCP server for the AIDataRead HTTP service"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "mcp>=1.28,<2",
+]
+
+[project.scripts]
+live-mcp-for-1c = "live_mcp_for_1c.mcp_server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["live_mcp_for_1c*"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"

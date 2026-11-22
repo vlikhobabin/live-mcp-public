@@ -45,7 +45,7 @@ class Settings:
 
     base_url: str
     username: str
-    password: str
+    password: str = field(repr=False)
     verify_tls: bool = True
     timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS
     cache_root: Path = field(default_factory=default_cache_root)

@@ -24,6 +24,7 @@ HTTP-расширения 1С `AIDataRead`. MCP-клиент вызывает ш
 
 - [AIDataRead — справочник HTTP-сервиса для разработчика 1С (.docx)](docs/ai-data-read-v0.2.0-ru.docx): установка CFE, публикация, права, поля и примеры HTTP-вызовов.
 - [Live MCP (Go) — руководство пользователя Codex CLI (.docx)](docs/live-mcp-go-v0.2.0-ru.docx): установка на Linux и Windows x64, проверка SHA-256, настройка stdio и проверка подключения.
+- [AIDataRead — руководство для PHP-разработчика (.docx)](docs/php-client-guide-ru.docx): подключение по HTTP Basic, склады, реквизиты, остатки и готовый PHP-класс.
 
 ## 1. Версии, состав и границы
 
